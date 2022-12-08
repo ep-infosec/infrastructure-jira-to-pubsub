@@ -1,0 +1,7 @@
+# Query URL
+jira_url: https://issues.apache.org/jira/rest/api/2/search?fields=key,created,creator,comment,worklog,summary,description&expand=changelog&maxResults=25&jql=updated%3E=-1m
+jira_user: jira-username                                    # Jira user to run as
+jira_pass: jira-token                                       # Jira user password or token
+jira_base: https://issues.apache.org/jira/browse/           # Base URL of tickets
+pubsub_url: http://localhost:2069/jira/{project}/{key}      # PubSub URL
+debug: false                                                # Debug mode: when enabled, only prints tickets that changed, doesn't post payload
